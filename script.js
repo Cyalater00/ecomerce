@@ -1,50 +1,4 @@
-    /////   json file /////
-// fetch("products.json")
-
-// .then(function(response){
-
-//     return response.json();
-
-// })
-
-// .then(function(products){
-
-//     let placeholder = document.querySelector("#data-output");
-
-//     let out = "";
-
-//     for(let product of products){
-
-//         out += `
-
-//         <section class="products">
-
-//                 <img src="${item.image}" alt="${item.image}">
-
-//                 <p class="title">${item.title}</p>
-
-//                 <p class="description">${item.description}</p>
-
-//                 <p class="price">
-
-//                 <span>${item.price}</span>
-
-//                 <span>&dollar;</span>
-
-//                 </p>
-
-//                 <p class="cart"> add to cart </p>
-    
-//                 </section>
-        
-//         `;
-//     }
-
-//     placeholder.innerHTML = out;
-
-// })
-
-
+/////   json file /////
 
 // let http = new XMLHttpRequest();
 
@@ -62,7 +16,7 @@
 
 //         for(let item of products){
 //             output += `
-            
+
 //             <section class="Products" id="Products">
 
 //     <div class="swiper product-slider">
@@ -81,7 +35,7 @@
 
 //         <span>${item.price}</span>
 //      </p>
-        
+
 //             <div class="stars">
 //                 <i class="fas fa-star"></i>
 //                 <i class="fas fa-star"></i>
@@ -102,22 +56,20 @@
 
 // }
 
-    let http = new XMLHttpRequest();
+let http = new XMLHttpRequest();
 
-    http.open('get', 'products.json', true);
-    
-    http.send();
+http.open("get", "products.json", true);
 
-    http.onload = function(){
+http.send();
 
-        if(this.readyState == 4 && this.status == 200){
+http.onload = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    let products = JSON.parse(this.responseText);
 
-            let products = JSON.parse(this.responseText);
+    let output = "";
 
-            let output = "";
-
-            for(let item of products){
-                output += `
+    for (let item of products) {
+      output += `
                 
                 <section class="products" id="products">
 
@@ -138,91 +90,82 @@
                 </section>
 
                 `;
-            }
-
-            document.querySelector(".products").innerHTML = output;
-        }
-
     }
-    /////   json file ends ////
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      ////// search btn ///////
-let searchForm = document.querySelector('.search-form');
 
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
-        ////search btn /////
+    document.querySelector(".products").innerHTML = output;
+  }
+};
+/////   json file ends ////
 
-    /////// Shopping bag stlye //////
-let shoppingCart = document.querySelector('.shopping-cart');
+////// search btn ///////
+let searchForm = document.querySelector(".search-form");
 
-document.querySelector('#bag-btn').onclick = () =>{
-    shoppingCart.classList.toggle('active');
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
-    //////// end of shopping bag ////////
+document.querySelector("#search-btn").onclick = () => {
+  searchForm.classList.toggle("active");
+  shoppingCart.classList.remove("active");
+  loginForm.classList.remove("active");
+  navbar.classList.remove("active");
+};
+////search btn /////
 
-        /////// User Login //////
-let loginForm = document.querySelector('.login-form');
+/////// Shopping bag stlye //////
+let shoppingCart = document.querySelector(".shopping-cart");
 
-document.querySelector('#login-btn').onclick = () =>{
-    loginForm.classList.toggle('active');
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    navbar.classList.remove('active');
-}
-    //////// end user login ////////
+document.querySelector("#bag-btn").onclick = () => {
+  shoppingCart.classList.toggle("active");
+  searchForm.classList.remove("active");
+  loginForm.classList.remove("active");
+  navbar.classList.remove("active");
+};
+//////// end of shopping bag ////////
 
-            /////// Hamm burger menu //////
-let navbar = document.querySelector('.navbar');
+/////// User Login //////
+let loginForm = document.querySelector(".login-form");
 
-document.querySelector('#menu-btn').onclick = () =>{
-    navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-}
-    //////// end burger menu  ////////
+document.querySelector("#login-btn").onclick = () => {
+  loginForm.classList.toggle("active");
+  searchForm.classList.remove("active");
+  shoppingCart.classList.remove("active");
+  navbar.classList.remove("active");
+};
+//////// end user login ////////
 
-window.onscroll = () =>{
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
+/////// Hamm burger menu //////
+let navbar = document.querySelector(".navbar");
 
-// swiper 
+document.querySelector("#menu-btn").onclick = () => {
+  navbar.classList.toggle("active");
+  searchForm.classList.remove("active");
+  shoppingCart.classList.remove("active");
+  loginForm.classList.remove("active");
+};
+//////// end burger menu  ////////
+
+window.onscroll = () => {
+  searchForm.classList.remove("active");
+  shoppingCart.classList.remove("active");
+  loginForm.classList.remove("active");
+  navbar.classList.remove("active");
+};
+
+// swiper
 var swiper = new Swiper(".trending-slider", {
-    loop:true,
-    spaceBetween: 20,
-    autoplay:{
-        delay: 3700,
-        disableOnInterection: false,
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 3300,
+    disableOnInterection: false,
+  },
+  centeredSlides: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-    centeredSlides: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1020: {
-        slidesPerView: 3,
-      },
+    768: {
+      slidesPerView: 2,
     },
-  });
+    1020: {
+      slidesPerView: 3,
+    },
+  },
+});
