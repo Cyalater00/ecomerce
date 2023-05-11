@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+
+    <!-- swiper cdn -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+            <!-- header section starts -->
+    <header class="header">
+
+                <!-- logo -->
+        <a href="#" class="logo"> <i class="fa-sharp fa-solid fa-crown"></i> Shop JZ </a>
+                <!-- end of logo -->
+
+                <!-- nav bar  -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#trending">trending</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+                <!-- end of nav bar  -->
+
+                <!-- icons -->
+        <div class="icons">
+            <div class="fa-sharp fa-solid fa-bars" id="menu-btn"></div>
+            <div class="fa-brands fa-searchengin" id="search-btn"></div>
+            <div class="fa-sharp fa-regular fa-heart" id="heart-btn"></div>
+            <div class="fa-sharp fa-solid fa-bag-shopping" id="bag-btn"></div>
+            <div class="fa-sharp fa-regular fa-user" id="login-btn"></div>
+        </div>
+                <!-- end of icons -->
+
+                <!-- Search  -->
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fa-brands fa-searchengin"></label>
+            </form>
+                <!-- end of search -->
+
+                <!-- shopping bag -->
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="/club/arsenalhome.jpeg" alt="">
+                <div class="content">
+                    <h3>Arsenal Home Shirt</h3>
+                    <span class="price">$70.99/- </span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="/club/arsenalaway.jpeg" alt="">
+                <div class="content">
+                    <h3>Arsenal away Shirt</h3>
+                    <span class="price">$70.99/- </span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="total"> total : $141.98/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+                    <!-- end of shopping bag -->
+     
+         <!-- user login -->
+         <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#"> click here </a></p>
+            <p> don't have an account <a href="#"> create now </a></p>
+            <input type="submit" value="login now" class="btn">
+         </form>
+         <!-- end of user login -->
+
+    </header>
+    <!-- header section ends -->
+
+      <!-- hero section starts -->
+      <section class="home" id="home">
+
+        <div class="content">
+            <h3>get your <span> aunthentic </span> jersey here </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis sapiente nesciunt aspernatur enim laborum saepe dolorum, nihil quo, soluta accusantium optio beatae animi minima consectetur sed vero vel excepturi!</p>
+            <a href="#" class="hero-btn">shop now</a>
+        </div>
+      </section>
+      <!-- hero section ends -->
+
+      <!-- trending selling -->
+      <!-- <section class="trending" id="trending">
+
+        <h1 class="heading"> most <span>popular</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="/country/nigeriaAway.avif" alt="">
+                <h3>best selling</h3>
+                <p>nigeria away jersey 2022/23</p>
+                <a href="#" class="btn">quick view</a>
+            </div>
+        
+            <div class="box">
+                <img src="/country/ghanahome.avif" alt="">
+                <h3>best selling</h3>
+                <p>Ghana away jersey 2022/23</p>
+                <a href="#" class="btn">quick view</a>
+            </div>
+
+            <div class="box">
+                <img src="/country/usaAway.webp" alt="">
+                <h3>best selling</h3>
+                <p>united states home 2022/23</p>
+                <a href="#" class="btn">quick view</a>
+            </div>
+
+            <div class="box">
+                <img src="/country/mexicoaway.jpeg" alt="">
+                <h3>best selling</h3>
+                <p>Mexico away 2022/23</p>
+                <a href="#" class="btn">quick view</a>
+            </div>
+
+            <div class="box">
+                <img src="/country/ivorycoasthome.avif" alt="">
+                <h3>best selling</h3>
+                <p> Côte d'Ivoire home jersey 2022/23</p>
+                <a href="#" class="btn">quick view</a>
+            </div>
+
+            <div class="box">
+                <img src="/country/franceaway.avif" alt="">
+                <h3>best selling</h3>
+                <p>france away 2022/23</p>
+                <a href="#" class="btn">quick view</a>
+            </div>
+        </div>
+      </section> -->
+
+      <section class="trending" id="trending">
+
+        <h1 class="heading"> most <span>popular</span></h1>
+        
+        <div class="swiper trending-slider">
+    
+        <div class="swiper-wrapper">
+    
+            <div class="swiper-slide box">
+                <img src="/country/nigeriaAway.avif" alt="">
+                <h3>nigeria away jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+    
+            <div class="swiper-slide box">
+                <img src="/country/ghanahome.avif" alt="">
+                <h3>ghana home jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/country/ivorycoasthome.avif" alt="">
+                <h3>cote d'ivoire home jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/country/usaAway.webp" alt="">
+                <h3>USA away jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/country/ghanaAway.jpeg" alt="">
+                <h3>ghanaAway jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+    
+        </div>
+    
+        </div>
+    
+        <div class="swiper trending-slider">
+    
+            <div class="swiper-wrapper">
+
+    
+                <div class="swiper-slide box">
+                    <img src="/country/usahome.webp" alt="">
+                    <h3>united states home jersey</h3>
+                    <div class="price"> $70.99/- - 80.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="/country/mexicoaway.jpeg" alt="">
+                    <h3>mexico away jersey</h3>
+                    <div class="price"> $70.99/- - 80.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src="/country/franceaway.avif" alt="">
+                    <h3>france away jersey</h3>
+                    <div class="price"> $70.99/- - 80.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/country/nigeriahome.webp" alt="">
+                    <h3>nigeria home jersey</h3>
+                    <div class="price"> $70.99/- - 80.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/country/IvorycoastAway.webp" alt="">
+                    <h3>cote d'ivoire away jersey</h3>
+                    <div class="price"> $70.99/- - 80.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+    
+            </div>
+        
+            </div>
+    
+    </section>
+      <!-- best selling ends -->
+
+
+<!-- JSON PRODUCTS -->
+<section class="products" id="products">
+
+    <h1 class="items"> most <span class="items">popular</span></h1>
+
+    <div class="items"><img src="${item.image}" alt="${item.image}">
+
+    <p class="description">${item.description}</p>
+
+    <p class="price">
+
+    <span>${item.price}</span>
+
+    <span>&dollar;</span>
+
+    </p>
+
+    <p class="cart"> add to cart <i class="fa-solid fa-cart-plus"></i></p> </div>
+    
+    </section>
+            <!-- JSON PRODUCTS ENDS -->
+
+      <!-- products1.0 section -->
+<!-- <section class="Products" id="Products">
+
+    <h1 class="heading"> our <span>products</span></h1>
+    
+    <div class="swiper product-slider">
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+            <img src="/club/arsenalhome.jpeg" alt="">
+            <h3>arsenal home jersey</h3>
+            <div class="price"> $70.99/- - 80.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="/club/arsenalaway.jpeg" alt="">
+            <h3>arsenal away jersey</h3>
+            <div class="price"> $70.99/- - 80.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="/club/unitedhome.jpeg" alt="">
+            <h3>united home jersey</h3>
+            <div class="price"> $70.99/- - 80.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="/club/uniteaway.jpeg" alt="">
+            <h3>United away jersey</h3>
+            <div class="price"> $70.99/- - 80.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="/club/chelseaAway.jpeg" alt="">
+            <h3>chelsea away jersey</h3>
+            <div class="price"> $70.99/- - 80.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="/club/chelseahome.jpeg" alt="">
+            <h3>chelsea home jersey</h3>
+            <div class="price"> $70.99/- - 80.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="swiper-slide box">
+            <img src="/club/napoliaway.jpeg" alt="">
+            <h3>napoli away jersey</h3>
+            <div class="price"> $70.99/- - 80.99/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="/club/napolihome.jpeg" alt="">
+                <h3>napoli home jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/club/barcaaway.jpeg" alt="">
+                <h3>Barcelona away jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/club/barcahome.jpeg" alt="">
+                <h3>Barcelona home jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/club/madridaway.jpeg" alt="">
+                <h3>madrid away jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/club/madridhome.jpeg" alt="">
+                <h3>madrid home jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/club/Milanaway.jpeg" alt="">
+                <h3>Ac milan away jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/club/milanhome.jpeg" alt="">
+                <h3>ac milan home jersey</h3>
+                <div class="price"> $70.99/- - 80.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+    
+        </div>
+
+</section> -->
+      <!-- products section ends -->
+
+      <!-- contacts -->
+      <section class="contact" id="contact">
+
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" placeholder="Your Name">
+				<input type="text" class="field" placeholder="Your Email">
+				<input type="text" class="field" placeholder="Phone">
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div>
+      </section>
+<!-- contact ends -->
+
+<!-- footer -->
+<section class="footer">
+    <div class="socialicons">
+        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://www.twittr.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footernav">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#Products">about</a></li>
+            <li><a href="#contact">contact us</a></li>
+            <li><a href="">our team</a></li>
+        </ul>
+    </div>
+    <div class="footerbottom">
+        <p>copyright &copy;2023; designed by <span class="designer">Jachimike</span></p>
+
+    </div>
+
+</section>
+<!-- footer ends -->
+
+
+<!-- swiper js link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Jss link -->
+    <script src="script.js"></script>
+</body>
+</html>

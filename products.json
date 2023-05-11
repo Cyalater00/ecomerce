@@ -1,0 +1,89 @@
+[
+    {
+        "image": "club/arsenalaway.jpeg",
+        "description": "Arsenal away kit 22/23",
+        "price": "70.99" 
+    },
+    {
+        "image": "club/arsenalhome.jpeg",
+        "description": "Arsenal Home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/barcaaway.jpeg",
+
+        "description": "Barcelona away kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/barcahome.jpeg",
+    
+        "description": "Barcelona home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/chelseaAway.jpeg",
+    
+        "description": "chelsea Away kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/chelseahome.jpeg",
+       
+        "description": "chelsea home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/madridaway.jpeg",
+    
+        "description": "Madrid Away kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/madridhome.jpeg",
+    
+        "description": "Madrid Home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/Milanaway.jpeg",
+       
+        "description": "Milan away kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/milanhome.jpeg",
+      
+        "description": "Milan Home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/uniteaway.jpeg",
+
+        "description": "United Home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/unitedhome.jpeg",
+       
+        "description": "United Home kit 22/23",
+        "price": "70.99"
+    },
+
+    {
+        "image": "club/napoliaway.jpeg",
+        "description": "Napoli Home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/napolihome.jpeg",
+        
+        "description": "Napoli Home kit 22/23",
+        "price": "70.99"
+    },
+    {
+        "image": "club/brentfordhome.jpeg",
+        "description": "Brentford Home kit 22/23",
+        "price": "70.99"
+    }
+]
